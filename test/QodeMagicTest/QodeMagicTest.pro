@@ -46,25 +46,25 @@ win32 {
         LIBS += \
             -lQodeMagic_debug
         PRE_TARGETDEPS += \
-            $$QMAKE_LIBDIR/QodeMagic_debug.lib
+            $$DESTDIR/QodeMagic_debug.lib
     }
     CONFIG(release, debug|release) {
         LIBS += \
             -lQodeMagic
         PRE_TARGETDEPS += \
-            $$QMAKE_LIBDIR/QodeMagic.lib
+            $$DESTDIR/QodeMagic.lib
     }
 } else {
     CONFIG(debug, debug|release) {
         LIBS += \
             -lQodeMagic_debug
         PRE_TARGETDEPS += \
-            $$QMAKE_LIBDIR/libQodeMagic_debug.a
+            $$DESTDIR/libQodeMagic_debug.a
     }
     CONFIG(release, debug|release) {
         LIBS += \
             -lQodeMagic
         PRE_TARGETDEPS += \
-            $$QMAKE_LIBDIR/libQodeMagic.a
+            $$DESTDIR/libQodeMagic.a
     }
 }
